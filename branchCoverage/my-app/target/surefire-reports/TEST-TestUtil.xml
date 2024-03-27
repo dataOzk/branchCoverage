@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestUtil" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestUtil" time="0.004" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/surefire/surefirebooter-20240327123707294_3.jar /Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/surefire 2024-03-27T12-37-07_257-jvmRun1 surefire-20240327123707294_1tmp surefire_0-20240327123707294_2tmp"/>
+    <property name="sun.java.command" value="/Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/surefire/surefirebooter-20240327134816407_3.jar /Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/surefire 2024-03-27T13-48-16_357-jvmRun1 surefire-20240327134816407_1tmp surefire_0-20240327134816407_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/test-classes:/Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/classes:/Users/dataozk/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/dataozk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dataozk/.m2/repository/org/mockito/mockito-inline/4.0.0/mockito-inline-4.0.0.jar:/Users/dataozk/.m2/repository/org/mockito/mockito-junit-jupiter/4.0.0/mockito-junit-jupiter-4.0.0.jar:/Users/dataozk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/dataozk/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/dataozk/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/dataozk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/dataozk/.m2/repository/org/mockito/mockito-core/4.11.0/mockito-core-4.11.0.jar:/Users/dataozk/.m2/repository/net/bytebuddy/byte-buddy/1.12.19/byte-buddy-1.12.19.jar:/Users/dataozk/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar:/Users/dataozk/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/surefire/surefirebooter-20240327123707294_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/dataozk/Desktop/BİL481/HW2/branchCoverage/my-app/target/surefire/surefirebooter-20240327134816407_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS"/>
@@ -59,5 +59,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="example" classname="TestUtil" time="0.0"/>
+  <testcase name="testCompute_OneArgument_ReturnsFalse" classname="TestUtil" time="0.002"/>
+  <testcase name="testCompute_SumNotDivisibleByArgument_ReturnsFalse" classname="TestUtil" time="0.0"/>
+  <testcase name="testCompute_ThrowsRuntimeExceptionWhenZeroArgument" classname="TestUtil" time="0.001"/>
+  <testcase name="testCompute_SumDivisibleByArgument_ReturnsTrue" classname="TestUtil" time="0.0"/>
+  <testcase name="testCompute_EvenNumberOfArguments_ReturnsFalse" classname="TestUtil" time="0.001"/>
+  <testcase name="testCompute_SumZero_ReturnsFalse" classname="TestUtil" time="0.0"/>
 </testsuite>
